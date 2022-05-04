@@ -1,5 +1,7 @@
-const teste = 1;
+import express from 'express';
 
-async function main() {
-  return 'ok';
-}
+const app = express();
+
+app.listen(3333, () => {
+  console.log('Server started on port 3333!');
+});
